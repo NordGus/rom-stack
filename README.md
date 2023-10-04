@@ -11,7 +11,7 @@ fascinated with the possibility of shipping all the required data (files, templa
 assets, etc.) inside a single Go executable. To the point that one of my first experiments was a 
 [tool](https://github.com/NordGus/anguler) to embed an Angular application inside a Go executable.
 
-It reminded me of the old cartridge based game consoles and their ROMs from my childhood. So that's 
+It reminded me of the old cartridge-based game consoles and their ROMs from my childhood. So that's 
 why I decided to call it the ROM Stack, a Tech Stack designed to build ROM-like applications with Go.
 
 ## Did I forget to include batteries?
@@ -27,7 +27,7 @@ And also has a `nvm` setup to work on a local environment.
 
 > But you're right. I completely forgot.
 
-## So I used the template, what now? 
+## So I used the template, now what?
 
 ### if you are working with the `devcontainer` setup
 
