@@ -67,10 +67,9 @@ And also has a `nvm` setup to work on a local environment.
 production and any-scale deployments beyond personal education without heavy 
 modification.
 
-If you have more experienced than myself setting up the missing pieces, 
-or if you consider that I'm missing something else or misconfigured 
-something. Don't be afraid of collaborating. Open a PR. And please 
-explain with details why and what it does. Share your knowledge with 
-other developers.
+If you have more experience setting up the missing pieces, or you consider 
+that I'm missing something else or misconfigured something. Don't be afraid 
+of collaborating. Open a PR. And please explain in details why and what it does. 
+Share your knowledge with other developers.
 
-**Let's build stuff together**.
+**Let's build cool stuff together**.
