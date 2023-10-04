@@ -1,6 +1,6 @@
 import "htmx.org";
 import "./style.css"
-import { setupCounter } from './counter.ts'
+import "./components/CounterComponent.ts"
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="flex flex-row justify-center">
@@ -14,9 +14,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1 class="text-[3.2rem] leading-[1.1] font-[system-ui]">Vite + TypeScript</h1>
     <div class="p-[2em]">
-      <button 
-        id="counter"
+      <button
         type="button"
+        is="rom-counter" 
         class="rounded-[8px] border-[1px] border-transparent hover:border-indigo-500 py-[0.6em] px-[1.2em] text-[1em] 
             font-medium bg-stone-900 cursor-pointer transition-[border-color] duration-[0.25s] focus:focus-visible:outline-4 
             focus:focus-visible:outline focus:focus-visible:outline[-webkit-focus-ring-color]"
@@ -25,5 +25,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <p>Click on the Vite and TypeScript logos to learn more</p>
   </div>
 `
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
