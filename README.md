@@ -50,8 +50,8 @@ And also has a `nvm` setup to work on a local environment.
 - [x] Write my own manifesto-like `README.md`.
 - [x] Learn how to set up `eslint`.
 - [x] Setup `eslint`.
-- [ ] Learn how to set up `Prettier`.
-- [ ] Setup `Prettier`.
+- [x] Learn how to set up `Prettier`.
+- [x] Setup `Prettier`.
 - [ ] Setup test environment.
 - [ ] Learn how to use `Makefiles` for development environment.
 - [ ] Setup `Makefile` to handle the development environment.
