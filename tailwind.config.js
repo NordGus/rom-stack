@@ -6,6 +6,10 @@ export default {
     "./client/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    darkMode: "media",
+    fontFamily: {
+      sans: ["Lato", "system-ui", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
