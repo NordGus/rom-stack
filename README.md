@@ -48,8 +48,8 @@ And also has a `nvm` setup to work on a local environment.
 
 - [x] Make the proof-of-concept.
 - [x] Write my own manifesto-like `README.md`.
-- [ ] Learn how to set up `eslint`.
-- [ ] Setup `eslint`.
+- [x] Learn how to set up `eslint`.
+- [x] Setup `eslint`.
 - [ ] Learn how to set up `Prettier`.
 - [ ] Setup `Prettier`.
 - [ ] Setup test environment.
