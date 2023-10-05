@@ -1,8 +1,8 @@
 export default class CounterElement extends HTMLButtonElement {
-  private count: number
+  private count: number;
 
   constructor() {
-    super()
+    super();
 
     this.count = 0;
     this.innerHTML = `count is ${this.count}`;
@@ -10,16 +10,16 @@ export default class CounterElement extends HTMLButtonElement {
 
   connectedCallback(): void {
     this.innerHTML = `count is ${this.count}`;
-    this.addEventListener("click", this.increment)
+    this.addEventListener("click", this.increment);
   }
 
   disconnectedCallback(): void {
-    this.removeEventListener("click", this.increment)
+    this.removeEventListener("click", this.increment);
   }
 
   increment(): void {
-    this.count++
-    this.innerHTML = `count is ${this.count}`
+    this.count++;
+    this.innerHTML = `count is ${this.count}`;
   }
 }
 

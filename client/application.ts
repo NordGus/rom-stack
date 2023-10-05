@@ -1,4 +1,3 @@
 import "htmx.org";
-import "./style.css"
-import "./components/CounterComponent.ts"
-
+import "./style.css";
+import "./components/CounterComponent.ts";
