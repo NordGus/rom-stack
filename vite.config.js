@@ -3,8 +3,23 @@ import path from "path";
 
 export default defineConfig({
   build: {
-    outDir: "dist",
+    lib: {
+      entry: "client/application.ts",
+      name: "application",
+    },
     manifest: true,
+    rollupOptions: {
+      output: {
+        dir: "dist",
+        entryFileNames: "application.js",
+        assetFileNames: "application.css",
+        chunkFileNames: "chunk.js",
+        manualChunks: undefined,
+      },
+    },
+  },
+  css: {
+    postcss: "./postcss.config.js",
   },
   feature: {},
   plugins: [],
