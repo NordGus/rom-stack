@@ -3,7 +3,7 @@
 build
 dist
 public
-server
+domain
 .yarn
 
 .pnp.*
