@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/NordGus/rom-stack/html"
+	"github.com/NordGus/rom-stack/staticfileserver"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"log"
@@ -9,7 +10,12 @@ import (
 )
 
 func main() {
-	htmlapp, err := html.New()
+	htmlApp, err := html.New()
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	statictfileserverApp, err := staticfileserver.New()
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -18,7 +24,8 @@ func main() {
 	router.Use(middleware.Logger)
 	router.Use(devCORSMiddleware)
 
-	htmlapp.Routes(router)
+	htmlApp.Routes(router)
+	statictfileserverApp.Routes(router)
 
 	err = http.ListenAndServe(":4269", router)
 	if err != nil {

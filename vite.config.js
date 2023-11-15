@@ -7,10 +7,9 @@ export default defineConfig({
       entry: "client/application.ts",
       name: "application",
     },
-    manifest: true,
     rollupOptions: {
       output: {
-        dir: "dist",
+        dir: "staticfileserver/dist",
         entryFileNames: "application.js",
         assetFileNames: "application.css",
         chunkFileNames: "chunk.js",
