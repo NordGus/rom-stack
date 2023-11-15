@@ -2,7 +2,7 @@
   "name": "ROM Stack",
   "build": {
     "args": {
-      "GO_VERSION": "1.21.1",
+      "GO_VERSION": "1.21.4",
       "ALPINE_VERSION": "3.18",
       "NODE_VERSION": "20.8"
     },
@@ -32,7 +32,7 @@
   "forwardPorts": [4269],
   "portsAttributes": {
     "4269": {
-      "label": "Go API Server entrypoint",
+      "label": "Go Server entrypoint",
       "onAutoForward": "notify",
       "requireLocalPort": true
     }
