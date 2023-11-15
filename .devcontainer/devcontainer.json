@@ -29,12 +29,17 @@
   "securityOpt": ["seccomp=unconfined"],
   "containerUser": "vscode",
   "mounts": [{ "source": "${env:HOME}/.ssh", "target": "/home/vscode/.ssh:ro", "type": "bind" }],
-  "forwardPorts": [4269],
+  "forwardPorts": [4269, 5173],
   "portsAttributes": {
     "4269": {
       "label": "Go Server entrypoint",
       "onAutoForward": "notify",
       "requireLocalPort": true
+    },
+    "5173": {
+      "label": "Vite Dev Server",
+      onAutoForward: "notify",
+      requireLocalPort: true
     }
   },
   "postCreateCommand": {
