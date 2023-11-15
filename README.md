@@ -35,14 +35,14 @@ And also has a `nvm` setup to work on a local environment.
 2. Run `go mod edit <module name>` to rename the Go module.
 3. Run `go mod tidy` to update Go dependencies.
 4. Rename the project inside the `package.json`.
-5. Run `yarn install` to update your `yarn.lock`.
+5. Run `npm install` to update your `package-lock.json`.
 
 ### If you are working locally
 
 1. Run `go mod edit <module name>` to rename the Go module.
 2. Rename the project inside the `package.json`.
 3. Run `go mod download` to download Go dependencies.
-4. Run `yarn install` to download Node dependencies.
+4. Run `install install` to download Node dependencies.
 
 ## Roadmap
 
