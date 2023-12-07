@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./html/templates/**/*.gohtml", "./client/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./html/templates/**/*.gohtml",
+    "./client/src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     darkMode: "class",
     fontFamily: {
