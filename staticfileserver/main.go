@@ -7,12 +7,12 @@ var (
 	dist embed.FS
 )
 
-type App struct {
+type Service struct {
 	dist embed.FS
 }
 
-func New() (*App, error) {
-	return &App{
+func New() (*Service, error) {
+	return &Service{
 		dist: dist,
 	}, nil
 }
