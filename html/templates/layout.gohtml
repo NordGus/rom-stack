@@ -2,8 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/dist/application.css">
+
         <title>Vite + TS</title>
     </head>
     <body class="m-0 flex place-items-center min-w-[320px] min-h-[100vh] bg-neutral-200 dark:bg-stone-800 text-neutral-900 dark:text-neutral-100">
@@ -13,6 +15,6 @@
         >
             <p hx-get="/app" hx-trigger="load" hx-target="#app">Loading</p>
         </div>
-        <script type="module" src="http://localhost:5173/client/application.ts"></script>
+        <script type="module" src="/dist/application.js"></script>
     </body>
 </html>
