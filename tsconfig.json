@@ -20,11 +20,11 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Paths */
-    "baseUrl": "./client",
+    "baseUrl": "./client/src",
     "paths": {
       "@/*": ["./*"],
       "@Components/*": ["components/*"]
     }
   },
-  "include": ["client"]
+  "include": ["client/src"]
 }
