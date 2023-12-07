@@ -3,16 +3,16 @@ package staticfileserver
 import "embed"
 
 var (
-	//go:embed dist
-	dist embed.FS
+	//go:embed dist public
+	fs embed.FS
 )
 
 type Service struct {
-	dist embed.FS
+	fs embed.FS
 }
 
 func New() (*Service, error) {
 	return &Service{
-		dist: dist,
+		fs: fs,
 	}, nil
 }
