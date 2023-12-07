@@ -1,4 +1,4 @@
-dist/*
 build/*
-public/*
+staticfileserver/dist/*
+staticfileserver/public/*
 docs/*

@@ -1,9 +1,6 @@
 *.go
 
 build
-dist
-public
-domain
-.yarn
+staticfileserver/dist
+staticfileserver/public
 
-.pnp.*
