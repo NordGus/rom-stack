@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "esbuild client/src/*.* --bundle --sourcemap --outdir=staticfileserver/dist",
+    "build": "esbuild client/src/*.* --bundle --sourcemap --outdir=staticfileserver/dist --public-path=/dist",
     "build:css": "tailwindcss -i ./client/stylesheets/application.tailwind.css -o ./staticfileserver/dist/application.css --minify",
     "lint": "eslint . --fix",
     "format": "prettier --write ."
