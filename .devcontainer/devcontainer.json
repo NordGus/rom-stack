@@ -4,7 +4,8 @@
     "args": {
       "GO_VERSION": "1.21.4",
       "ALPINE_VERSION": "3.18",
-      "NODE_VERSION": "20.9"
+      "NODE_VERSION": "20.10",
+      "GO_AIR_VERSION": "v1.49.0"
     },
     "dockerfile": "devcontainer.Dockerfile"
   },
