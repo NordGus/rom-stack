@@ -54,7 +54,7 @@ And also has a `nvm` setup to work on a local environment.
 - [x] Setup `Prettier`.
 - [x] Migrate to simple `esbuild`.
 - [ ] Learn how to use `air`.
-- [ ] Setup `air` to handle environments.
+- [ ] Setup `air` to handle hot-reloading.
 - [ ] Setup test environment.
 - [ ] Setup `Docker` image to build and serve the project.
 - [ ] Learn how to set up a CI/CD pipeline for the project.
