@@ -148,3 +148,8 @@ dist/*
 
 staticfileserver/dist/*
 !staticfileserver/dist/.keep
+
+tmp/*
+
+build/*
+!build/.keep
