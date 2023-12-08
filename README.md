@@ -42,7 +42,8 @@ And also has a `nvm` setup to work on a local environment.
 1. Run `go mod edit <module name>` to rename the Go module.
 2. Rename the project inside the `package.json`.
 3. Run `go mod download` to download Go dependencies.
-4. Run `install install` to download Node dependencies.
+4. Run `npm install` to download Node dependencies.
+5. Install `air` by running `go install github.com/cosmtrek/air@latest`.
 
 ## Roadmap
 
