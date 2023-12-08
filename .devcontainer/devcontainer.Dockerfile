@@ -28,6 +28,9 @@ RUN adduser $USERNAME -s /bin/sh -D -u $USER_UID $USER_GID && \
 # install packages
 RUN apk add -q --update --progress --no-cache git sudo openssh-client zsh nano
 
+# installing cosmtrek/air for hot reloading
+RUN go install github.com/cosmtrek/air@latest
+
 # Setup shell
 USER $USERNAME
 RUN sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended &> /dev/null
