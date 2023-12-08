@@ -42,7 +42,8 @@ And also has a `nvm` setup to work on a local environment.
 1. Run `go mod edit <module name>` to rename the Go module.
 2. Rename the project inside the `package.json`.
 3. Run `go mod download` to download Go dependencies.
-4. Run `install install` to download Node dependencies.
+4. Run `npm install` to download Node dependencies.
+5. Install `air` by running `go install github.com/cosmtrek/air@latest`.
 
 ## Roadmap
 
@@ -53,8 +54,10 @@ And also has a `nvm` setup to work on a local environment.
 - [x] Learn how to set up `Prettier`.
 - [x] Setup `Prettier`.
 - [x] Migrate to simple `esbuild`.
-- [ ] Learn how to use `air`.
-- [ ] Setup `air` to handle environments.
+- [x] Learn how to use `air`.
+- [x] Setup `air` to handle hot-reloading.
+- [ ] Learn how to use `Makefiles`.
+- [ ] Setup `Makefile` to control the different tools in the project.
 - [ ] Setup test environment.
 - [ ] Setup `Docker` image to build and serve the project.
 - [ ] Learn how to set up a CI/CD pipeline for the project.

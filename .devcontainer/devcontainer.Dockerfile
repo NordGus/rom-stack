@@ -4,6 +4,7 @@
 ARG GO_VERSION
 ARG ALPINE_VERSION
 ARG NODE_VERSION
+ARG GO_AIR_VERSION
 
 FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} as node
 FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION}
@@ -27,6 +28,9 @@ RUN adduser $USERNAME -s /bin/sh -D -u $USER_UID $USER_GID && \
 
 # install packages
 RUN apk add -q --update --progress --no-cache git sudo openssh-client zsh nano
+
+# installing cosmtrek/air for hot reloading
+RUN go install github.com/cosmtrek/air@$GO_AIR_VERSION
 
 # Setup shell
 USER $USERNAME
