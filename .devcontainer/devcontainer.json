@@ -39,12 +39,12 @@
     },
     "5173": {
       "label": "Vite Dev Server",
-      onAutoForward: "notify",
-      requireLocalPort: true
+      "onAutoForward": "notify",
+      "requireLocalPort": true
     }
   },
   "postCreateCommand": {
     "go:dependencies": ["go", "mod", "download"],
-    "yarn:dependencies": ["yarn", "install"]
+    "yarn:dependencies": ["npm", "install"]
   }
 }
