@@ -19,7 +19,8 @@
         "rangav.vscode-thunder-client",
         "donjayamanne.githistory",
         "streetsidesoftware.code-spell-checker",
-        "alexcvzz.vscode-sqlite"
+        "alexcvzz.vscode-sqlite",
+        "bradlc.vscode-tailwindcss"
       ],
       "settings": {
         "go.useLanguageServer": true
@@ -44,7 +45,7 @@
     }
   },
   "postCreateCommand": {
-    "go:dependencies": ["go", "mod", "download"],
-    "yarn:dependencies": ["npm", "install"]
+    "go:dependencies": "sudo chmod -R a+w /go/pkg && go mod download",
+    "npm:dependencies": "npm install"
   }
 }
